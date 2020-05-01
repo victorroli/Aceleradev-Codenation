@@ -1,0 +1,328 @@
+header {
+    background-image: url('../img/capa-madmax2.jpg');
+    background-size: 122%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 145vh;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+header:after {
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+nav {
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 13%;
+}
+
+nav ul>li {
+    margin: auto 27px;
+    font-weight: bold;
+}
+
+nav ul,
+#menu-body {
+    display: flex;
+    padding: 0px;
+}
+
+#menu-body {
+    margin: 0px 13%;
+}
+
+main ul {
+    justify-content: center;
+}
+
+main {
+    background: #f2f2f2;
+    padding-bottom: 3%;
+}
+
+.header-infos ul {
+    padding: 0px;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+ul {
+    text-transform: uppercase;
+}
+
+ul>li:hover,
+.header-infos ul>li:hover {
+    color: #e4bb23;
+    cursor: pointer;
+}
+
+li {
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.user img {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+}
+
+.user p {
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.image-poster {
+    max-width: 237px;
+    border-radius: 11px 11px 0px 0px;
+}
+
+.movies {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 13%;
+}
+
+span.fa,
+i::before {
+    color: #bfbaba;
+    font-size: 20px;
+}
+
+footer i::before {
+    font-size: 28px;
+}
+
+.header-infos {
+    padding: 0% 12.5%;
+    z-index: 2;
+}
+
+button {
+    background: #e4bb23;
+    padding: 14px 16px 14px 54px;
+    border-radius: 25px;
+    margin: auto auto 2% auto;
+    border: none;
+}
+
+button .fa {
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#menu-body {
+    padding-top: 26px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+}
+
+#menu-body li:hover {
+    box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+#menu-body li {
+    padding-bottom: 26px;
+    font-weight: bold;
+}
+
+.header-infos ul>li,
+.header-infos p,
+nav ul>li,
+.user p,
+h1 {
+    color: #fff;
+}
+
+h1 {
+    font-size: 71px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.image-description {
+    padding: 10px;
+    background: #fff;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-liked {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-description p {
+    font-size: 13px;
+    text-transform: inherit;
+}
+
+.image-description p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image-description p,
+.header-infos p:last-child,
+#menu-body {
+    color: #e4bb23;
+}
+
+ul>li,
+p,
+span {
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 300;
+}
+
+span {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.social-medias {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+span.fa:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.movie-play {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 80px 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+figure:hover .movie-play {
+    opacity: 1;
+    visibility: visible;
+}
+
+.movie-play h3 {
+    color: #e4bb23;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.facebook:hover i::before {
+    color: #3b5998;
+}
+
+.instagram:hover i::before {
+    color: #e95950;
+}
+
+.twitter:hover i::before {
+    color: #55acee;
+}
+
+i {
+    cursor: pointer;
+}
+
+.movie-header {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-header img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-play-link {
+    color: #fff;
+    font-size: 5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.movie-play-link:hover i::before {
+    color: #e4bb23;
+}
+
+article:hover .movie-play {
+    opacity: 1;
+    visibility: visible;
+}
+
+article h3 {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.fa.fa-play::before {
+    font-size: 50px;
+}
