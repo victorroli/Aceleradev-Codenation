@@ -1,4 +1,5 @@
 */*-lock.json
 */output.json
 *.txt
+*.xml
 */node_modules/*
