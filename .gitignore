@@ -1,3 +1,4 @@
-*.json
+*/*-lock.json
+*/output.json
 *.txt
 */node_modules/*
